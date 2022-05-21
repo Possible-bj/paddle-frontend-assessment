@@ -1,0 +1,73 @@
+*  {
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out; 
+}
+body {
+  background-image: linear-gradient(to bottom, #210343, #0e0127)  !important;
+}
+main {
+  min-height: 80vh;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: #fff !important;
+}
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+h3 {
+  padding: 1rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
+
+.nav-bar-togggle {
+  background-image: url("data:image/svg+xml, <svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg> ");
+}
+
+.nav-screen-links {
+  color: #fff !important;
+  margin: auto 1rem;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  font-size: 100%;
+} 
+.nav-screen-links:hover {
+  background-color: rgba(255, 255, 255, 0.163) !important;
+  border-radius: 50px;
+}
+
+.contact {
+  background-color: #2b1ec2;
+  border-radius: 50px;
+}
+.tnc {
+  width: 100%;
+  margin: auto;
+  padding: .5rem;
+}
+
+.sm-box {
+  /* border: 2px solid red; */
+  display: flex;
+  margin: auto; 
+  padding: .5rem;
+  position: relative;
+  width: 100%;
+}
+.sm-box > span {
+  margin: auto;
+}
+.border-black-2px {
+  border: 2px solid #000;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.br-6 {
+  border-radius: 6px;
+}
