@@ -1,9 +1,10 @@
-*  {
+* {
   box-sizing: border-box;
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
+  font-family: 'Arial Narrow Bold', sans-serif;
 }
 body {
-  background-image: linear-gradient(to bottom, #210343, #0e0127)  !important;
+  background: linear-gradient(200deg, #290355 2%, #0e0127 80%);
 }
 main {
   min-height: 80vh;
@@ -35,7 +36,7 @@ h3 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
   font-size: 100%;
-} 
+}
 .nav-screen-links:hover {
   background-color: rgba(255, 255, 255, 0.163) !important;
   border-radius: 50px;
@@ -48,19 +49,22 @@ h3 {
 .tnc {
   width: 100%;
   margin: auto;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .sm-box {
   /* border: 2px solid red; */
   display: flex;
-  margin: auto; 
-  padding: .5rem;
+  margin: auto;
+  padding: 0.5rem;
   position: relative;
   width: 100%;
 }
-.sm-box > span {
-  margin: auto;
+.sm-box i {
+  cursor: pointer;
+}
+.sm-box i:hover {
+  color: #fff;
 }
 .border-black-2px {
   border: 2px solid #000;
@@ -70,4 +74,58 @@ h3 {
 }
 .br-6 {
   border-radius: 6px;
+}
+strong {
+  color: #fff;
+  font-size: medium;
+  font-weight: 600;
+}
+.countdown-box {
+  height: 100px;
+}
+.countdown-cards {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  width: 20%;
+}
+.countdown-cards > h1 {
+  color: #000 !important;
+  font-weight: 900;
+  font-size: 2rem;
+  /* flex-grow: 1; */
+  padding: 0;
+  width: 100%;
+}
+.countdown-cards > div {
+  font-weight: 500;
+}
+.name-input {
+  border-bottom: 2px solid #7645ae;
+  margin-bottom: 20px;
+}
+
+.form-box {
+  height: 50px;
+}
+
+.form-box > input {
+  border-radius: 50px;
+}
+.form-box > button {
+  background-color: #2b1ec2;
+  border-radius: 50px;
+  font-size: 1rem;
+  width: 40%;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .form-box > button {
+    font-size: 0.5rem;
+  }
 }

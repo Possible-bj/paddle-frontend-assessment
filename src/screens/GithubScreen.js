@@ -31,6 +31,9 @@ const GithubScreen = () => {
   return (
     <>
       <Row>
+        <Col md={12} xs={12}>
+          <h1 className='text-center'>Github Repositories</h1>
+        </Col>
         {/* Loader */}
         {loading ? (
           <Col md={12} xs={12}>

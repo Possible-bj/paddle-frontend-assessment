@@ -1,0 +1,50 @@
+.form input {
+  margin-bottom: 10px;
+}
+.bg-btn-blue {
+  background-color: #2b1ec2;
+}
+.contact-send-btn {
+  width: 25%;
+  border-radius: 50px;
+}
+
+.back-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.contact-form {
+  background-color: #0e0127;
+  height: 100%;
+  width: 50%;
+}
+.contact-form > .form {
+  width: 80%;
+}
+.img-blur {
+  filter: blur(10px);
+}
+.back-btn {
+  z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form {
+    width: 100%;
+  }
+  .contact-send-btn {
+    width: 35%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .back-btn {
+    top: 0;
+    left: -18px;
+    right: auto;
+  }
+}

@@ -1,100 +1,69 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { Form, Button } from 'react-bootstrap'
-import { useDispatch, useSelector } from 'react-redux'
-import Message from '../components/Message'
-import Loader from '../components/Loader'
-import FormContainer from '../components/FormContainer'
-// import { getUserDetails, updateUser } from '../actions/userActions'
-// import { USER_UPDATE_RESET } from '../constants/userConstants'
+import { Form, Button, Row, Image } from 'react-bootstrap'
+import homeSnapShot from '../resources/images/home_snap_shot.png'
+import '../resources/styles/contact.css'
 
-const UserEditScreen = ({ match, history }) => {
-  const userId = match.params.id
-
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [isAdmin, setIsAdmin] = useState(false)
-
-  const dispatch = useDispatch()
-
-  const userDetails = useSelector((state) => state.userDetails)
-  const { loading, error, user } = userDetails
-
-  const userUpdate = useSelector((state) => state.userUpdate)
-  const {
-    loading: loadingUpdate,
-    error: errorUpdate,
-    success: successUpdate,
-  } = userUpdate
-
-  useEffect(() => {
-    if (successUpdate) {
-      // dispatch({ type: USER_UPDATE_RESET })
-      history.push('/admin/userlist')
-    } else {
-      if (!user.name || user._id !== userId) {
-        // dispatch(getUserDetails(userId))
-      } else {
-        setName(user.name)
-        setEmail(user.email)
-        setIsAdmin(user.isAdmin)
-      }
-    }
-  }, [dispatch, user, userId, successUpdate, history])
-
-  const submitHandler = (e) => {
-    e.preventDefault()
-    // dispatch(updateUser({ _id: userId, name, email, isAdmin }))
-  }
-
+const ContactScreen = () => {
   return (
     <>
-      <Link to={`/admin/userlist`} className='btn btn-light my-3'>
-        Go Back
-      </Link>
-      <FormContainer>
-        <h1>Edit User</h1>
-        {loadingUpdate && <Loader />}
-        {errorUpdate && <Message>{errorUpdate}</Message>}
-        {loading ? (
-          <Loader />
-        ) : error ? (
-          <Message variant='danger'>{error}</Message>
-        ) : (
-          <Form onSubmit={submitHandler}>
-            <Form.Group controlId='name'>
-              <Form.Label>Name</Form.Label>
+      <Row className='abs centered max-height max-width margin-auto'>
+        <div className='margin-auto abs centered max-height max-width'>
+          <Image
+            className='max-width max-height img-fluid img-blur'
+            src={homeSnapShot}
+            alt=''
+          />
+        </div>
+        <Link to={`/`} className='back-btn btn abs btn-light flex p-2'>
+          <i className='fas fa-arrow-right margin-auto'></i>
+        </Link>
+        <div className='contact-form centered-right  margin-auto abs flex flex-column justify-content-center align-items-center'>
+          <p
+            className='text-center text-white mt-3'
+            style={{ fontSize: '20px' }}>
+            Hey, we are still in the work, <br /> But you can send us a message.
+          </p>
+          <Form className='text-white form flex flex-column justify-content-center'>
+            <Form.Group controlId='firstname'>
+              <Form.Label>First Name</Form.Label>
               <Form.Control
-                type='name'
-                placeholder='Enter Name'
-                value={name}
-                onChange={(e) => setName(e.target.value)}></Form.Control>
+                type='text'
+                placeholder='Enter your First Name'
+                className='br-6'></Form.Control>
+            </Form.Group>
+            <Form.Group controlId='lastname'>
+              <Form.Label>Last Name</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Enter your Last Name'
+                className='br-6'></Form.Control>
             </Form.Group>
             <Form.Group controlId='email'>
               <Form.Label>Email Address</Form.Label>
               <Form.Control
                 type='email'
-                placeholder='Enter Email'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}></Form.Control>
+                placeholder='Enter your Email Address'
+                className='br-6'></Form.Control>
             </Form.Group>
-            <Form.Group controlId='isadmin'>
-              {/* <Form.Label></Form.Label> */}
-              <Form.Check
-                type='checkbox'
-                label='isAdmin'
-                checked={isAdmin}
-                onChange={(e) => setIsAdmin(e.target.checked)}></Form.Check>
+            <Form.Group controlId='message'>
+              <Form.Label>Tell us what you need help with</Form.Label>
+              <Form.Control
+                as='textarea'
+                type='email'
+                rows={8}
+                placeholder='Enter a Topic like "Channel Problem"'
+                className='br-6'></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>
-              Update
+            <Button type='submit' className='bg-btn-blue contact-send-btn'>
+              send now
             </Button>
           </Form>
-        )}
-      </FormContainer>
+        </div>
+      </Row>
     </>
   )
 }
 
-export default UserEditScreen
+export default ContactScreen
