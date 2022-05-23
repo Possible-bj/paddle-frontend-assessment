@@ -25,24 +25,15 @@ const Header = () => {
                   <LinkContainer
                     to='/github'
                     className='github nav-screen-links'>
-                    <Nav.Link>
-                      {/* <i className='fa fa-sign-in-alt' aria-hidden='true'></i> */}
-                      Github
-                    </Nav.Link>
+                    <Nav.Link>Github</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to='/about' className='about nav-screen-links'>
-                    <Nav.Link>
-                      {/* <i className='fa fa-sign-in-alt' aria-hidden='true'></i> */}
-                      About Us
-                    </Nav.Link>
+                    <Nav.Link>About Us</Nav.Link>
                   </LinkContainer>
                   <LinkContainer
                     to='/contact'
                     className='contact nav-screen-links'>
-                    <Nav.Link>
-                      {/* <i className='fa fa-sign-in-alt' aria-hidden='true'></i> */}
-                      Contact US
-                    </Nav.Link>
+                    <Nav.Link>Contact US</Nav.Link>
                   </LinkContainer>
                 </>
               }

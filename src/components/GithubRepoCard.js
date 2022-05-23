@@ -1,5 +1,4 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
 import { Card, Col, Image, Row } from 'react-bootstrap'
 const today = new Date()
 const now = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}T`
