@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
+import Bubble from './Bubble'
 
 const TopAbout = () => {
   return (
@@ -19,7 +20,17 @@ const TopAbout = () => {
               and E-commerce
             </div>
           </div>
-          <div className='about-top-frames about-top-frame-right margin-auto max-height flex'>
+          <div className='about-top-frames rel about-top-frame-right margin-auto max-height flex'>
+            <Bubble
+              width={150}
+              height={150}
+              variant={'#1f3265'}
+              left={'auto'}
+              right={'2%'}
+              top={'15%'}
+              bottom={'auto'}
+              stack={'-1'}
+            />
             <div className='about-top-description'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Vestibulum vitae gravida ante. Donec porttitor, mauris a eleifend

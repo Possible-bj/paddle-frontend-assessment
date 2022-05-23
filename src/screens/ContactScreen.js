@@ -20,12 +20,14 @@ const ContactScreen = () => {
         </Link>
         <div className='contact-form centered-right  margin-auto abs flex flex-column justify-content-center align-items-center'>
           <p
-            className='text-center text-white mt-3'
+            className='text-center text-white mt-3 mb-5'
             style={{ fontSize: '20px' }}>
             Hey, we are still in the work, <br /> But you can send us a message.
           </p>
           <Form className='text-white form flex flex-column justify-content-center'>
-            <Form.Group controlId='firstname'>
+            <Form.Group
+              controlId='firstname'
+              style={{ zIndex: '10 !important' }}>
               <Form.Label>First Name</Form.Label>
               <Form.Control
                 type='text'
@@ -51,7 +53,7 @@ const ContactScreen = () => {
               <Form.Control
                 as='textarea'
                 type='email'
-                rows={8}
+                rows={5}
                 placeholder='Enter a Topic like "Channel Problem"'
                 className='br-6'></Form.Control>
             </Form.Group>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
+import Bubble from './Bubble'
 
 const BottomAbout = () => {
   return (
@@ -58,7 +59,7 @@ const BottomAbout = () => {
             </div>
           </div>
         </div>
-        <div className='about-bottom-contact margin-auto max-height max-width flex flex-column justify-content-center p-5'>
+        <div className='about-bottom-contact rel margin-auto max-height max-width flex flex-column justify-content-center p-5'>
           <h1 className='text-capitalize text-white'>Got a Question?</h1>
           <p className='about-bottom-contact-pg'>
             See how Metricks can help your business grow with best affiliate
@@ -69,6 +70,16 @@ const BottomAbout = () => {
               Contact Us <i className='fa fa-long-arrow-alt-right'></i>
             </div>
           </LinkContainer>
+          <Bubble
+            width={'40%'}
+            height={'80%'}
+            variant={'#77453b'}
+            right={'5%'}
+            left={'auto'}
+            borderRadius={3}
+            stack={'-1'}
+            blur={10}
+          />
         </div>
       </Row>
     </>

@@ -1,11 +1,39 @@
 import React from 'react'
 import { Button, Col, FormControl, Row } from 'react-bootstrap'
+import Bubble from '../components/Bubble'
 import CountDown from '../components/CountDown'
 
 const HomeScreen = () => {
   return (
     <>
       <Row className='mb-5'>
+        <Bubble
+          width={80}
+          height={80}
+          variant={'#6a196e'}
+          right={'auto'}
+          left={'15%'}
+          top={'15%'}
+          bottom={'auto'}
+        />
+        <Bubble
+          width={80}
+          height={80}
+          variant={'#1f3265'}
+          right={'15%'}
+          left={'auto'}
+          top={'35%'}
+          bottom={'auto'}
+        />
+        <Bubble
+          width={80}
+          height={80}
+          variant={'#6c3728'}
+          right={'auto'}
+          left={'20%'}
+          top={'90%'}
+          bottom={'auto'}
+        />
         <Col md={12} xs={12}>
           <h1 className='text-center'>
             something awesome is <br /> coming soon{' '}

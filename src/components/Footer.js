@@ -6,9 +6,9 @@ const year = new Date().getFullYear()
 const Footer = () => {
   return (
     <footer>
-      <Container className='mt-5 bg-transparent'>
+      <Container className='mt-5 bg-transparent rel pt-5'>
         <Row>
-          <Col className='text-center py-3'>
+          <Col className='text-center rel py-3'>
             <Row>
               <Col md={{ span: 6, offset: 3 }} xs={{ span: 10, offset: 1 }}>
                 <Row className='sm-box'>
