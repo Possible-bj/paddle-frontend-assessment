@@ -14,7 +14,7 @@ export const getGithubRepo = (page) => async (dispatch) => {
     })
 
     const { data } = await axios.get(url)
-    console.log(data)
+    // console.log(data)
 
     dispatch({
       type: GITHUB_MOST_STARRED_REPO_SUCCESS,

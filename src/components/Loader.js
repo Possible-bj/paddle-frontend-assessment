@@ -1,15 +1,25 @@
 import React from 'react'
 import { Spinner } from 'react-bootstrap'
-const Loader = () => {
+const Loader = ({
+  loaderSize,
+  loadAs,
+  ariaHidden,
+  loaderWidth,
+  loaderHeight,
+}) => {
   return (
     <Spinner
+      as={loadAs}
       animation='border'
       role='status'
+      size={loaderSize}
+      aria-hidden={ariaHidden}
       style={{
-        width: '100px',
-        height: '100px',
+        width: loaderWidth,
+        height: loaderHeight,
         margin: 'auto',
-        display: 'block'
+        display: 'block',
+        color: '#fff',
       }}>
       <span className='sr-only'> Loading... </span>
     </Spinner>

@@ -4,7 +4,7 @@ import { Card, Col, Image, Row } from 'react-bootstrap'
 const today = new Date()
 const now = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}T`
 
-const GithubCard = ({ repo }) => {
+const GithubRepoCard = ({ repo }) => {
   const parseDate = (str) => {
     var mdy = str.split('T')[0].split('-')
     return new Date(mdy[0], mdy[1] - 1, mdy[2])
@@ -56,4 +56,4 @@ const GithubCard = ({ repo }) => {
   )
 }
 
-export default GithubCard
+export default GithubRepoCard

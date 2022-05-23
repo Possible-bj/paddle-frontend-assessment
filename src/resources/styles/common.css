@@ -137,3 +137,6 @@
 .r-auto {
   left: auto;
 }
+.hide-overflow {
+  overflow: hidden !important;
+}

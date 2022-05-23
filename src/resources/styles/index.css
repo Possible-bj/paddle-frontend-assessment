@@ -1,5 +1,4 @@
 * {
-  /* border: 2px solid red; */
   box-sizing: border-box;
   transition: all 0.5s ease-in-out;
   font-family: 'Arial Narrow Bold', sans-serif;
@@ -97,7 +96,6 @@ strong {
   color: #000 !important;
   font-weight: 900;
   font-size: 2rem;
-  /* flex-grow: 1; */
   padding: 0;
   width: 100%;
 }
