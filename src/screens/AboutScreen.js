@@ -1,10 +1,24 @@
 import React from 'react'
-// import { Form, Button } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
+import BottomAbout from '../components/BottomAbout'
+import CenterAbout from '../components/CenterAbout'
+import TopAbout from '../components/TopAbout'
+import '../resources/styles/about.css'
 
 const AboutScreen = () => {
   return (
     <>
-      <h1>About US</h1>
+      <Row className='max-width margin-auto rel'>
+        <Col md={12} xs={12} className='rel'>
+          <TopAbout />
+        </Col>
+        <Col md={12} xs={12}>
+          <CenterAbout />
+        </Col>
+        <Col md={12} xs={12}>
+          <BottomAbout />
+        </Col>
+      </Row>
     </>
   )
 }

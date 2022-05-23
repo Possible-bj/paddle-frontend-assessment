@@ -54,7 +54,11 @@ const GithubScreen = () => {
       <Row className='max-width rel margin-auto'>
         {/* Repo Data */}
         {repos && repos.length
-          ? repos.map((repo) => <GithubCard repo={repo} />)
+          ? repos.map((repo) => (
+              <Col md={10} xs={12} className='margin-auto'>
+                <GithubCard repo={repo} />{' '}
+              </Col>
+            ))
           : null}
       </Row>
 

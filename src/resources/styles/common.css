@@ -100,3 +100,40 @@
 .align-self-center {
   align-self: center;
 }
+.border-danger {
+  border: 2px solid red;
+}
+.border-black {
+  border: 2px solid black;
+}
+.border-white {
+  border: 2px solid white;
+}
+.border-primary {
+  border: 2px solid blue;
+}
+.border-grey {
+  border: 2px solid grey;
+}
+.border-success {
+  border: 2px solid rgb(47, 195, 47);
+}
+.border-warning {
+  border: 2px solid yellow;
+}
+.border-info {
+  border: 2px solid rgb(4, 173, 252);
+}
+
+.l-0 {
+  left: 0;
+}
+.r-0 {
+  left: 0;
+}
+.l-auto {
+  left: auto;
+}
+.r-auto {
+  left: auto;
+}

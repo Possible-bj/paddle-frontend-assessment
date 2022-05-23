@@ -41,11 +41,11 @@ const GithubCard = ({ repo }) => {
                 <span>
                   Submitted{' '}
                   {interval === 1
-                    ? `${interval} day`
+                    ? `${interval} day ago`
                     : interval === 0
-                    ? 'Moments'
-                    : `${interval} days `}{' '}
-                  ago by {repo.owner.login}
+                    ? 'today'
+                    : `${interval} days ago`}{' '}
+                  by {repo.owner.login}
                 </span>
               </Col>
             </Row>
