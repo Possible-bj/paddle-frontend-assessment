@@ -6,7 +6,7 @@ After download of the project
 either by cloning the repo using remote url **_https://github.com/Possible-bj/paddle-frontend-assessment.git_**
 or by downloading the zip and extracting the contents of the project.
 
-1. Open/navigate to the project root directory in your terminal and run the command below
+1. Open/navigate to the project root directory in your terminal(command line interface) and run the command below
 
    > `_npm install_`
 
