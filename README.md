@@ -1,4 +1,5 @@
 ## Paddle Frontend Assessment
+### Take a look at the -> _[Live Preview](https://ben-paddle-assessment.netlify.app)_
 
 ### How to install and serve up the application
 
@@ -8,12 +9,12 @@ or by downloading the zip and extracting the contents of the project.
 
 1. Open/navigate to the project root directory in your terminal(command line interface) and run the command below
 
-   > `_npm install_`
+   `_npm install_`
 
 to install all of the necessary dependencies
 
 2. After the success of the above step, run the command below
-   > `_npm run start_`
+   `_npm run start_`
 
 from the same root directory to start the application.
 The server would start on [localhost](http://localhost:3000) and normally should open up in the browser automatically but if it does not, please open the localhost on port 3000 in your browser.
@@ -36,3 +37,5 @@ The server would start on [localhost](http://localhost:3000) and normally should
 > `tel: 08169664798` <br />
 
 > }
+### Tasks
+_The blog page was intensionally left out as the instructions states that it is an optional task_
